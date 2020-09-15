@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jrcampos55
+    provider: github
+    repository: spring-boot-http-gradle-jenkins-x
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jrcampos55-spring-boot-http-gradle-jenkins-x
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jrcampos55/spring-boot-http-gradle-jenkins-x.git
+  org: jrcampos55
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-boot-http-gradle-jenkins-x
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/jrcampos55/spring-boot-http-gradle-jenkins-x
