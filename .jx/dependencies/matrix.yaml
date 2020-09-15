@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: jrcampos55
+  repo: spring-boot-http-gradle-jenkins-x
+  url: https://github.com/jrcampos55/spring-boot-http-gradle-jenkins-x.git
+  version: ""
+  versionURL: ""

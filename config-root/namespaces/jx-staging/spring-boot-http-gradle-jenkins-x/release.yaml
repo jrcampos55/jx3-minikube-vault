@@ -1,0 +1,35 @@
+# Source: spring-boot-http-gradle-jenkins-x/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-09-15T17:24:58Z"
+  deletionTimestamp: null
+  name: 'spring-boot-http-gradle-jenkins-x-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: jason@jason.modem
+        name: jason
+      branch: master
+      committer:
+        accountReference:
+          - id: jason-0
+            provider: jenkins.io/git-github-userid
+        email: jason@jason.modem
+        name: jason
+      message: |
+        Jenkins X build pack
+      sha: 534d00c2c9be467d1232f0f6b0e1f1e5c1b13048
+  gitCloneUrl: https://github.com/jrcampos55/spring-boot-http-gradle-jenkins-x.git
+  gitHttpUrl: https://github.com/jrcampos55/spring-boot-http-gradle-jenkins-x
+  gitOwner: jrcampos55
+  gitRepository: spring-boot-http-gradle-jenkins-x
+  name: 'spring-boot-http-gradle-jenkins-x'
+  releaseNotesURL: https://github.com/jrcampos55/spring-boot-http-gradle-jenkins-x/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
